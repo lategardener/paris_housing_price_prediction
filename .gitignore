@@ -1,0 +1,13 @@
+# Environnements virtuels et secrets
+.env
+venv/
+*.env
+
+# Fichiers Jupyter
+.ipynb_checkpoints/
+
+# Fichiers Python temporaires
+__pycache__/
+*.py[cod]
+
+.idea/
