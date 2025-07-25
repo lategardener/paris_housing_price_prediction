@@ -127,13 +127,13 @@ These metrics provide complementary views on model performance.
 ## Results
 
 
-| Model                    | MAE      | RMSE     | R²   |
-|--------------------------|----------|----------|------|
-| Linear Regression        | 1,510.03 | 1,922.42 | 1.00 |
-| Decision Tree (default)  | 4,494.98 | 5,704.07 | 1.00 |
-| Decision Tree (GridSearch)| 4,040.20 | 5,097.64 | 1.00 |
-| Random Forest (Optuna)   | 3,457.94 | 4,793.16 | 1.00 |
-| XGBoost (Optuna)         | 34,654.39| 43,962.22| 1.00 |
+| Model                    | MAE       | RMSE     | R²   |
+|--------------------------|-----------|----------|------|
+| Linear Regression        | 1,510.03  | 1,922.42 | 1.00 |
+| Decision Tree (default)  | 4,494.98  | 5,704.07 | 1.00 |
+| Decision Tree (GridSearch)| 4,040.20  | 5,097.64 | 1.00 |
+| Random Forest (Optuna)   | 3344.94  | 4356.93 | 1.00 |
+| XGBoost (Optuna)         | 35,212.45 | 44319.10| 1.00 |
 ---
 
 ## Visualizations
@@ -145,6 +145,10 @@ The project includes visualizations such as:
 - Residuals distribution histograms
 
 These visualizations help interpret model behavior and identify improvement areas.
+
+Below is a comparison of model performance:
+
+![Model Performance](outputs/performance_comparison.png)
 
 ---
 ## Packages / Environment
