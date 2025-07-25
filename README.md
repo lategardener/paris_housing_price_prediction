@@ -53,6 +53,7 @@ It contains approximately 8,000 entries with the following features:
 
 The dataset was already clean, with no missing values or need for transformations.  
 This allowed us to directly use the features for modeling without additional preprocessing steps.
+
 ---
 
 ## Installation
