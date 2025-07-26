@@ -74,7 +74,7 @@ else:
 
     # Affichage par groupe de 3 colonnes
     for i in range(0, len(feature_cols), 3):
-        cols = st.columns(3)  # créer 3 colonnes Streamlit
+        cols = st.columns(4)  # créer 3 colonnes Streamlit
         for j, col in enumerate(feature_cols[i:i+3]):
             dtype = df[col].dtype
             with cols[j]:  # placer chaque champ dans une colonne
