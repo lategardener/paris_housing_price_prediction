@@ -73,9 +73,9 @@ else:
     feature_cols = [col for col in df.columns if col != "price"]
 
     # Affichage par groupe de 3 colonnes
-    for i in range(0, len(feature_cols), 3):
+    for i in range(0, len(feature_cols), 4):
         cols = st.columns(4)  # créer 3 colonnes Streamlit
-        for j, col in enumerate(feature_cols[i:i+3]):
+        for j, col in enumerate(feature_cols[i:i+4]):
             dtype = df[col].dtype
             with cols[j]:  # placer chaque champ dans une colonne
                 if dtype == "bool":
