@@ -15,16 +15,17 @@ The goal is to compare the performance of different algorithms and build a robus
 3. [Data Preprocessing](#data-preprocessing)
 4. [Installation](#installation)
 5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Models Used](#models-used)
-8. [Evaluation Metrics](#evaluation-metrics)
-9. [Results](#results)
-10. [Visualizations](#visualizations)
-11. [Packages / Environment](#packages--environment)
-12. [Contributing](#contributing)
-13. [License](#license)
-14. [Conclusion](#conclusion)
-15. [Contact](#contact)
+6. [Web app - Model testing](#web-app---model-testing)
+7. [Project Structure](#project-structure)
+8. [Models Used](#models-used)
+9. [Evaluation Metrics](#evaluation-metrics)
+10. [Results](#results)
+11. [Visualizations](#visualizations)
+12. [Packages / Environment](#packages--environment)
+13. [Contributing](#contributing)
+14. [License](#license)
+15. [Conclusion](#conclusion)
+16. [Contact](#contact)
 
 ---
 
@@ -90,20 +91,42 @@ The project is structured as a Jupyter notebook for interactive exploration and 
    ```bash
      jupyter notebook notebooks/paris_housing_analysis.ipynb
    ```
+
+## Web App - Model Testing
+
+An interactive web application is available to test predictions from the different regression models developed in this project.
+
+This Streamlit app allows you to:
+- Visualize the distribution of input features and target variable
+- Compare the performance of models side-by-side
+- Input custom data to test predictions from Linear Regression, Decision Tree, Random Forest, and XGBoost models
+
+
+You can access the app online here:  
+[https://paris-housing.streamlit.app/](https://paris-housing.streamlit.app/)
+
+---
+
 ## Project Structure
 
 ```
 paris-housing/
-├── data/
-│   ├── paris_housing                   # Original dataset
-├── notebooks/
-│   └── paris_housing_analysis.ipynb    # Main analysis notebook
-├── src/                                # Source code
-│   ├── distribution.py                 # graphics
-│   ├── register_model.py               # Model registration
-│   └── evaluate.py                     # Model evaluation
-├── requirements.txt                    # Python dependencies
-└── README.md                           # Project documentation
+├── data
+│   └── paris_housing.csv
+├── LICENSE
+├── notebooks
+│   └── paris_housing_analysis.ipynb
+├── outputs
+│   ├── metrics_outputs
+│   └── models
+├── README.md
+├── requirements.txt
+├── src
+│   ├── distribution.py
+│   ├── evaluate.py
+│   └── save.py
+├── streamlit_app
+│   └── app.py
 ```
 
 ## Models Used
@@ -148,7 +171,7 @@ These visualizations help interpret model behavior and identify improvement area
 
 Below is a comparison of model performance:
 
-![Model Performance](outputs/performance_comparison.png)
+![Model Performance](outputs/metrics_outputs/metrics_comparison.png)
 
 ---
 ## Packages / Environment
